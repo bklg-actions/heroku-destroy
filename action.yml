@@ -1,13 +1,9 @@
-name: 'Wait'
-description: 'Wait a designated number of milliseconds'
+name: 'heroku-destroy'
+description: 'GitHub Action that destroys an existing Heroku application.'
 inputs:
-  milliseconds:  # id of input
-    description: 'number of milliseconds to wait'
+  application_name:
+    description: 'The name of the application you want to destroy'
     required: true
-    default: '1000'
-outputs:
-  time: # output will be available to future steps
-    description: 'The message to output'
 runs:
   using: 'node12'
   main: 'dist/index.js'
