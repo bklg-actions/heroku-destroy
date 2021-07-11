@@ -1,17 +1,17 @@
 {
-  "name": "heroku-auth",
+  "name": "heroku-destroy",
   "version": "1.0.0",
-  "description": "GitHub Action that adds your Heroku credentials to ~/.netrc for other jobs in your workflow.",
+  "description": "GitHub Action that destroys an existing Heroku application.",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
     "build": "ncc build lib/index.js -o dist --source-map --license licenses.txt",
     "test": "jest",
-    "all": "npm run lint && npm run prepare && npm run test"
+    "all": "npm run lint && npm run build && npm run test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/bklog-actions/heroku-auth.git"
+    "url": "git+https://github.com/bklog-actions/heroku-destroy.git"
   },
   "keywords": [
     "GitHub",
@@ -21,9 +21,9 @@
   "author": "",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/bklog-actions/heroku-auth/issues"
+    "url": "https://github.com/bklog-actions/heroku-destroy/issues"
   },
-  "homepage": "https://github.com/bklog-actions/heroku-auth#readme",
+  "homepage": "https://github.com/bklog-actions/heroku-destroy#readme",
   "dependencies": {
     "@actions/core": "^1.2.5"
   },
